@@ -1,0 +1,14 @@
+#!/bin/bash
+
+function even-odd {
+		num=$1
+		status=`expr $num % 2`
+		if [ $status -eq 0 ];then
+		echo " $1 is even num";else
+		echo " $1 is odd num";fi
+		     }
+
+for i in $*
+do
+even-odd $i
+done
